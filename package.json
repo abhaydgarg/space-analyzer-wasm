@@ -1,0 +1,63 @@
+{
+  "name": "space-analyzer-wasm",
+  "version": "1.0.0",
+  "description": "Space analyzer is a tool which uses web assembly to visualize disk or directory usage.",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "build:wasm": "wasm-pack build wasm --out-name index --no-typescript --target bundler"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.1.0",
+    "semistandard": "^13.0.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "semistandard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/docs",
+      "/wasm/pkg"
+    ]
+  },
+  "keywords": [
+    "space",
+    "disk",
+    "folder",
+    "directory",
+    "analyze",
+    "analyzer",
+    "visualize",
+    "usage",
+    "wasm",
+    "web",
+    "assembly"
+  ],
+  "author": "Abhay Garg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhaydgarg/space-analyzer-wasm.git"
+  }
+}
